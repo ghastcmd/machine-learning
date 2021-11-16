@@ -1,0 +1,1 @@
+This is a repository for the current and forthcoming exercises for the machine learning discipline.
