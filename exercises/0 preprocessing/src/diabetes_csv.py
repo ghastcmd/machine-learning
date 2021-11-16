@@ -23,10 +23,10 @@ print(' - Criando X e y para o algoritmo de aprendizagem a partir do arquivo dia
 # Caso queira modificar as colunas consideradas basta algera o array a seguir.
 feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
                 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
-X = data[feature_cols]
-y = data.Outcome
+# X = data[feature_cols]
+# y = data.Outcome
 #%% Preprocessing
-new_feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 
+new_feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SKinThickness',
                 'BMI', 'DiabetesPedigreeFunction', 'Age']
 
 new_data = data
@@ -37,8 +37,6 @@ new_data['SkinThickness'].fillna(value=skin_thickness_mean, inplace=True)
 
 new_data = new_data.dropna()
 
-#%%
-print(new_data)
 
 #%%
 X = new_data[new_feature_cols]
