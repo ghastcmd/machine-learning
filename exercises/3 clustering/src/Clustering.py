@@ -82,6 +82,3 @@ prof_w_count
 # %%
 prof_w_count
 prof_w_count.to_csv('../clustering_olhos.csv')
-
-# Reference link:
-# https://medium.com/analytics-vidhya/clustering-and-profiling-customers-using-k-means-9afa4277427
