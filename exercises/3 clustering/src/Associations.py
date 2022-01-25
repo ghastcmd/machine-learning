@@ -1,7 +1,6 @@
 # %% The first cell
 import pandas as pd
 from sklearn.cluster import KMeans
-from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 from tqdm import tqdm
@@ -28,7 +27,7 @@ inertia_s1 = []
 
 for i in tqdm(range(2,21)):
     k1.append(i)
-    kmeans1 = KMeans(n_clusters=i,max_iter=100).fit(scaled_df[COLUMN_VALUES])
+    kmeans1 = KMeans(n_clusters=i).fit(scaled_df[COLUMN_VALUES])
     inertia_s1.append(kmeans1.inertia_)
 
 # plot
