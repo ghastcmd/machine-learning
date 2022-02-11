@@ -39,4 +39,6 @@ res1
 
 #%%
 res1.sort_values(by=['lift'], ascending=False)
+res1
+#%%
 res1.to_csv('associations.csv')
